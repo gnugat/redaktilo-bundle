@@ -1,0 +1,40 @@
+services:
+    redaktilo.command_invoker:
+        class: Gnugat\Redaktilo\Command\CommandInvoker
+        public: false
+
+    redaktilo.insert_above_command:
+        class: Gnugat\Redaktilo\Command\LineInsertAboveCommand
+        public: false
+        arguments:
+            - "@redaktilo.text_sanitizer"
+            - "@redaktilo.location_sanitizer"
+        tags:
+            - { name: redaktilo.command }
+
+    redaktilo.insert_below_command:
+        class: Gnugat\Redaktilo\Command\LineInsertBelowCommand
+        public: false
+        arguments:
+            - "@redaktilo.text_sanitizer"
+            - "@redaktilo.location_sanitizer"
+        tags:
+            - { name: redaktilo.command }
+
+    redaktilo.replace_command:
+        class: Gnugat\Redaktilo\Command\LineReplaceCommand
+        public: false
+        arguments:
+            - "@redaktilo.text_sanitizer"
+            - "@redaktilo.location_sanitizer"
+        tags:
+            - { name: redaktilo.command }
+
+    redaktilo.remove_command:
+        class: Gnugat\Redaktilo\Command\LineRemoveCommand
+        public: false
+        arguments:
+            - "@redaktilo.text_sanitizer"
+            - "@redaktilo.location_sanitizer"
+        tags:
+            - { name: redaktilo.command }

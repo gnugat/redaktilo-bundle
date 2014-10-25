@@ -1,3 +1,7 @@
+# Temporary
+/Tests/app/cache
+/Tests/app/logs
+
 # Third party
 /vendor
 /composer.lock

@@ -1,0 +1,13 @@
+framework:
+    secret: "Three can keep a secret, if two of them are dead."
+
+services:
+    acme_redaktilo.custom_strategy:
+        class: Gnugat\RedaktiloBundle\Tests\Custom\CustomSearchStrategy
+        tags:
+            - { name: redaktilo.search_strategy, priority: 30 }
+
+    acme_redaktilo.custom_command:
+        class: Gnugat\RedaktiloBundle\Tests\Custom\CustomCommand
+        tags:
+            - { name: redaktilo.command }

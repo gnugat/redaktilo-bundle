@@ -1,0 +1,16 @@
+services:
+    redaktilo.search_engine:
+        class: Gnugat\Redaktilo\Search\SearchEngine
+        public: false
+
+    redaktilo.regex_search_strategy:
+        class: Gnugat\Redaktilo\Search\LineRegexSearchStrategy
+        public: false
+        tags:
+            - { name: redaktilo.search_strategy, priority: 20 }
+
+    redaktilo.same_search_strategy:
+        class: Gnugat\Redaktilo\Search\SameSearchStrategy
+        public: false
+        tags:
+            - { name: search_engine, priority: 10 }

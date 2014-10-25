@@ -12,8 +12,15 @@ changes, improvements or alternatives may be given).
 
 Here's some tips to make you the best contributor ever:
 
+* [Green tests](#green-tests)
 * [Standard code](#standard-code)
 * [Keeping your fork up-to-date](#keeping-your-fork-up-to-date)
+
+## Green tests
+
+Run the tests using the following script:
+
+    ./vendor/bin/phpunit
 
 ## Standard code
 

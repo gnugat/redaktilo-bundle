@@ -1,0 +1,18 @@
+imports:
+    - { resource: private/command.yml }
+    - { resource: private/sanitizer.yml }
+    - { resource: private/search.yml }
+    - { resource: private/service.yml }
+
+services:
+    redaktilo.editor:
+        class: Gnugat\Redaktilo\Editor
+        arguments:
+            - "@redaktilo.filesystem"
+            - "@redaktilo.search_engine"
+            - "@redaktilo.command_invoker"
+
+    redaktilo.text_factory:
+        class: Gnugat\Redaktilo\Service\TextFactory
+        arguments:
+            - "@redaktilo.line_break"

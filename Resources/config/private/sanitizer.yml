@@ -1,0 +1,10 @@
+services:
+    redaktilo.text_sanitizer:
+        class: Gnugat\Redaktilo\Command\Sanitizer\TextSanitizer
+        public: false
+
+    redaktilo.location_sanitizer:
+        class: Gnugat\Redaktilo\Command\Sanitizer\LocationSanitizer
+        public: false
+        arguments:
+            - "@redaktilo.text_sanitizer"

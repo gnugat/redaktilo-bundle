@@ -3,7 +3,8 @@
 This file explains the versioning and branching models of this project.
 
 > **Note**: `GnugatRedaktiloBundle`'s version isn't synchronized with
-> Redaktilo's one.
+> Redaktilo's one (for e.g. the version 1.0.0 of the bundle uses the versions
+> between 1.2.0 and 1.3.0 of the library).
 
 ## Versioning
 
