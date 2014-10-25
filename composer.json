@@ -18,7 +18,6 @@
             "Gnugat\\RedaktiloBundle\\": ""
         }
     },
-    "target-dir": "Gnugat/RedaktiloBundle",
     "require": {
         "gnugat/redaktilo": "~1.2.0",
         "symfony/http-kernel": "~2.3",
