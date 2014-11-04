@@ -39,8 +39,6 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
 
     public function testCustomCommand()
     {
-        $this->markTestSkipped('Will be valid only with redaktilo v1.3');
-
         $editor = $this->container->get('redaktilo.editor');
 
         // Should not throw \Gnugat\Redaktilo\Command\CommandNotFoundException
