@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.1.0
+
+* updated redaktilo to version 1.3
+
 ## 1.0.0
 
 * added `redaktilo.search_strategy` tag
