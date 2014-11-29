@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.3.0
+
+* updated redaktilo to version 1.5
+
 ## 1.2.0
 
 * updated redaktilo to version 1.4
