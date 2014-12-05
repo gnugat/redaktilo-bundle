@@ -30,6 +30,16 @@ services:
         tags:
             - { name: redaktilo.command }
 
+    redaktilo.replace_all_command:
+        class: Gnugat\Redaktilo\Command\LineReplaceAllCommand
+        public: false
+        arguments:
+            - "@redaktilo.content_factory"
+            - "@redaktilo.text_factory"
+            - "@redaktilo.text_sanitizer"
+        tags:
+            - { name: redaktilo.command }
+
     redaktilo.remove_command:
         class: Gnugat\Redaktilo\Command\LineRemoveCommand
         public: false

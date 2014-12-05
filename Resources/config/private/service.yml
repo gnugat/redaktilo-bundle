@@ -1,4 +1,8 @@
 services:
+    redaktilo.content_factory:
+        class: Gnugat\Redaktilo\Service\ContentFactory
+        public: false
+
     redaktilo.filesystem:
         class: Gnugat\Redaktilo\Service\Filesystem
         public: false
