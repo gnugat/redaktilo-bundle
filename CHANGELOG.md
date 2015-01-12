@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.4.0
+
+* updated redaktilo to version 1.6
+
 ## 1.3.1
 
 * fixed Editor#replaceAll

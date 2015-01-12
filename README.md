@@ -4,7 +4,6 @@ Provides the following services from [Redaktilo](http://github.com/gnugat/redakt
 in a [Symfony2](http://symfony.com) application:
 
 * `redaktilo.editor`: an instance of [`Gnugat\Redaktilo\Editor`](http://github.com/gnugat/redaktilo/tree/master/src/Gnugat/Redaktilo/Editor.php)
-* `redaktilo.text_factory`: an instance of [`Gnugat\Redaktilo\Service\TextFactory`](http://github.com/gnugat/redaktilo/tree/master/src/Gnugat/Redaktilo/Service/TextFactory.php)
 
 Documentation:
 
