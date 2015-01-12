@@ -12,7 +12,5 @@ services:
             - "@redaktilo.search_engine"
             - "@redaktilo.command_invoker"
 
-    redaktilo.text_factory:
-        class: Gnugat\Redaktilo\Service\TextFactory
-        arguments:
-            - "@redaktilo.line_break"
+    redaktilo.content_factory:
+        class: Gnugat\Redaktilo\Service\ContentFactory

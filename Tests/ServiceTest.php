@@ -11,6 +11,8 @@
 
 namespace Gnugat\Redaktilo\Tests;
 
+use Gnugat\Redaktilo\Text;
+
 class ServiceTest extends \PHPUnit_Framework_TestCase
 {
     private $container;
@@ -30,11 +32,11 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf('Gnugat\Redaktilo\Editor', $editor);
     }
 
-    public function testTextFactoryService()
+    public function testContentFactoryService()
     {
-        $textFactory = $this->container->get('redaktilo.text_factory');
+        $contentFactory = $this->container->get('redaktilo.content_factory');
 
-        $this->assertInstanceOf('Gnugat\Redaktilo\Service\TextFactory', $textFactory);
+        $this->assertInstanceOf('Gnugat\Redaktilo\Service\ContentFactory', $contentFactory);
     }
 
     public function testCustomCommand()
@@ -48,8 +50,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     public function testCustomSearchStrategy()
     {
         $editor = $this->container->get('redaktilo.editor');
-        $textFactory = $this->container->get('redaktilo.text_factory');
-        $text = $textFactory->make('');
+        $text = Text::fromString('');
 
         // Should not throw \Gnugat\Redaktilo\Search\PatternNotSupportedException
         $editor->hasBelow($text, false);

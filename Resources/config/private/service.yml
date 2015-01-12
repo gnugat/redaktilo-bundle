@@ -7,9 +7,5 @@ services:
         class: Gnugat\Redaktilo\Service\Filesystem
         public: false
         arguments:
-            - "@redaktilo.line_break"
             - "@filesystem"
-
-    redaktilo.line_break:
-        class: Gnugat\Redaktilo\Service\LineBreak
-        public: false
+            - "@redaktilo.content_factory"
