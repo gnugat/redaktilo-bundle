@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.4.1
+
+* fixed LineReplaceAllCommand dependencies
+
 ## 1.4.0
 
 * updated redaktilo to version 1.6
