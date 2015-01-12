@@ -35,7 +35,6 @@ services:
         public: false
         arguments:
             - "@redaktilo.content_factory"
-            - "@redaktilo.text_factory"
             - "@redaktilo.text_sanitizer"
         tags:
             - { name: redaktilo.command }
