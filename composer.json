@@ -20,13 +20,13 @@
     },
     "require": {
         "gnugat/redaktilo": "~1.7.0",
-        "symfony/http-kernel": "~2.3",
-        "symfony/dependency-injection": "~2.3",
-        "symfony/config": "~2.3",
-        "symfony/yaml": "~2.3"
+        "symfony/http-kernel": "^2.3|^3.0",
+        "symfony/dependency-injection": "^2.3|^3.0",
+        "symfony/config": "^2.3|^3.0",
+        "symfony/yaml": "^2.3|^3.0"
     },
     "require-dev": {
-        "symfony/framework-bundle": "~2.3",
-        "phpunit/phpunit": ">=3.7,<5.0"
+        "symfony/framework-bundle": "^2.3|^3,0",
+        "phpunit/phpunit": "^4.5|^5.0"
     }
 }
