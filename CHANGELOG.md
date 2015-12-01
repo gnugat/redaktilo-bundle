@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.5.2
+
+* fixed version constraint
+
 ## 1.5.1
 
 * added support to Symfony 3
