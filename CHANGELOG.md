@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.5.1
+
+* added support to Symfony 3
+* updated to PHPUnit 4.5
+* added support to PHPUnit 5
+
 ## 1.5.0
 
 * updated redaktilo to version 1.7

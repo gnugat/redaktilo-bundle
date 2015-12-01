@@ -45,7 +45,7 @@ services:
 
 Use [Composer](http://getcomposer.com) to install the bundle:
 
-    composer require gnugat/redaktilo-bundle:~1.0
+    composer require gnugat/redaktilo-bundle:^1.0
 
 Then register the bundle in you kernel. For example:
 
